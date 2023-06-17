@@ -1,0 +1,23 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue","auto-imports.d.ts","components.d.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "ignoreDeprecations": "5.0",
+    // "module": "esnext",
+    // "esModuleInterop": true,
+    // "allowSyntheticDefaultImports": true,
+    // "allowUmdGlobalAccess": true,
+    // "importsNotUsedAsValues": "error",
+    // "verbatimModuleSyntax": true
+  },
+
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
